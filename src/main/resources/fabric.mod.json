@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "more_iron",
+	"version": "${version}",
+	"name": "More Iron",
+	"description": "This Mod Makes Increases Raw Iron Drop Rates to be Slightly More than Copper.",
+	"authors": [
+		"MrBlockhead"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/more-iron/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mrblockhead.more_iron.MoreIron"
+		],
+		"fabric-datagen": [
+			"net.mrblockhead.more_iron.MoreIronDataGenerator"
+		]
+	},
+	"mixins": [
+		"more-iron.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
